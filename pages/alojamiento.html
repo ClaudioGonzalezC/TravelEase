@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelEase - Claudio González</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logoHeader">
+                <a href="../index.html">
+                    <p class="logoHeader"><strong>Travel</strong><em>Ease</em></p>
+                </a>              
+            </div>
+            <div class="contentMenu">
+                <div class="menuConfig">
+                    <img class="navMenu" src="../img/navgps.svg" alt="NavGPS">
+                    <p class="nameMenu">Hola, <strong><em>Claudio Gonzalez</em></strong></p>
+                    <img class="navConfig" src="../img/config.svg" alt="Configuración">
+                    <img class="navAlert" src="../img/alert.svg" alt="Alertas">
+                    <img class="bwMode" src="../img/bwmode.png" alt="b/w mode">
+                </div>
+                <nav class="nav">
+                    <a class="menuHeader active" href="../pages/alojamiento.html">Mis viajes</a>
+                    <a class="menuHeader" href="../pages/tickets.html">Tickets</a>
+                    <a class="menuHeader" href="../pages/itinerario.html">Itinerario</a>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="filtros">
+                <div class="yearFiltros">
+                    <a class="filtrosButton" href="#">Anteriores</a> 
+                    <a class="filtrosButton" href="#">2023</a> 
+                    <a class="buttonActive" href="#">2024</a> 
+                    <a class="filtrosButton" href="#">2025</a> 
+                    <a class="filtrosLink" href="#">Nuevo viaje</a> 
+                </div>
+                <div class="proyectoName">
+                    <p class="fs-16">Preparando viaje: <strong>Viaje Mayo - junio</strong></p>
+                    <div>
+                        <a class="filtrosLink" href="#">Editar</a> 
+                        <a class="filtrosLinkDelete ml-20" href="#">Eliminar</a> 
+                    </div>
+                </div>
+                <div class="menuFiltros">
+                    <a href="../pages/alojamiento.html" class="menuHeader active">Alojamiento</a>
+                    <a class="menuHeader">Transporte</a>
+                    <a class="menuHeader">Restaurants</></a>
+                    <a href="../pages/mi-equipaje.html" class="menuHeader">Mi equipaje</a>
+                    <a class="menuHeader">Presupuesto</a>
+                    <a class="menuHeader">Reloj mundial</a>
+                </div>
+                <div class="filtrarPor">
+                    <form>
+                        <label for="cars">Filtrar por</label>
+                        <select id="filtrar" name="filtrar">
+                          <option value="volvo">País</option>
+                          <option value="saab">Fecha más cercana</option>
+                          <option value="fiat">Fecha más lejana</option>
+                          <option value="audi">Más avanzado</option>
+                          <option value="audi">Menos avanzado</option>
+                        </select>
+                      </form>
+                </div>
+            </section>
+            <section class="AlojamientoBlocks">
+                <div class="aloja">
+                    <div class="infoAloja">
+                        <div class="containerInfo">
+                            <h4 class="paisName">Inglaterra</h4>
+                            <div class="containerMaterialInfo"><span class="material-symbols-outlined">info</span></div>
+                            <div class="tooltip">Nota: Mantenerse actualizado sobre los documentos solicitados para entrar a Inglaterra.</div>
+                        </div>
+                        <p>Debe proporcionar un pasaporte o documento de viaje válido. Su pasaporte debe ser válido durante toda su estadía en el Reino Unido. <a class="filtrosLink" href="#">Comprobar si necesito una visa del Reino Unido</a>.</p>
+                    </div>
+                    <div class="ContentCard--Aloja">
+                        <div class="alojaCard">
+                            <h4 class="paisName">Londres</h4>
+                            <div class="containerSlider">
+                                <div class="imgLabel">
+                                    <img src="../img/img-alojamiento-1.png" alt="Londres">
+                                    <div class="labelPagado">Pagado</div>
+                                </div>
+                                <div class="contentSlider--aloja">
+                                    <div class="contentInfo">
+                                        <p class="dateAloja">26/05 - 30/05</p>
+                                        <h4 class="titleAloja"><strong>50 Chippenham Road, W.</strong><br>
+                                            Londres, W9 2AE, Reino Unido</h4>
+                                        <p class="descriptionCard--aloja">11 Noches, 1 Habitación, 1 Adulto.</p>
+                                        <p class="descriptionCard--aloja">1 Habitación doble estándar.</p>
+                                        <p class="descriptionCard--aloja">Check In/Out: 14:00 hs. / 11:00 hs.</p>
+                                        <p class="descriptionCard--aloja">20% IVA incluido. Suplemento de limpieza<br>
+                                            de 80 £ por estancia incluido.</p>
+                                        <p class="descriptionCard--aloja">Precio total: £687,75<br>
+                                            Has pagado £687,75 por esta reserva.</p>
+                                        <p class="descriptionCard--aloja">El precio de esta habitación no incluye servicio de comidas.</p>
+                                    </div>
+                                    <div class="contentGrid--aloja">
+                                        <p class="filtrosLink">Ver reserva</p>
+                                        <p class="filtrosLink">Ver voucher</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alojaCard">
+                            <h4 class="paisName">Liverpool</h4>
+                            <div class="containerSlider">
+                                <div class="imgLabel">
+                                    <img src="../img/img-alojamiento-3.png" alt="Liverpool">
+                                    <div class="labelPagado">Pagado</div>
+                                </div>
+                                <div class="contentSlider--aloja">
+                                    <div class="contentInfo">
+                                        <p class="dateAloja">26/05 - 30/05</p>
+                                        <h4 class="titleAloja"><strong>62 Hanover Street.</strong><br>
+                                            Liverpool, L1 4AF, Reino Unido</h4>
+                                        <p class="descriptionCard--aloja">4 Noches, 1 Habitación, 1 Adulto.</p>
+                                        <p class="descriptionCard--aloja">1 Habitación doble estándar. Cuenta con
+                                            Baño privado  con ducha o bañera.</p>
+                                        <p class="descriptionCard--aloja">Check In/Out: 14:00 hs. / 11:00 hs.</p>
+                                        <p class="descriptionCard--aloja">20% IVA incluido. Booking paga £13,19.</p>
+                                        <p class="descriptionCard--aloja">Precio total: £189,66<br>
+                                            Has pagado £189,66 por esta reserva.</p>
+                                        <p class="descriptionCard--aloja">El desayuno está incluido en el precio Final.</p>
+                                    </div>
+                                    <div class="contentGrid--aloja">
+                                        <p class="filtrosLink">Ver reserva</p>
+                                        <p class="filtrosLink">Ver voucher</p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="infoAloja">
+                        <div class="containerInfo">
+                            <h4 class="paisName">Francia</h4>
+                            <div class="containerMaterialInfo">
+                                <span class="material-symbols-outlined">info</span>
+                            </div>
+                            <div class="tooltip">Nota: Mantenerse actualizado sobre los documentos solicitados para entrar a Francia.</div>
+                        </div>
+                        <p>Debe proporcionar un pasaporte o documento de viaje válido. Su pasaporte debe ser válido durante toda su estadía en Francia. <a class="filtrosLink" href="#">Comprobar si necesito una visa de Francia</a>.</p>
+                    </div>
+                    <div class="ContentCard--Aloja">
+                        <div class="alojaCard">
+                            <h4 class="paisName">Paris</h4>
+                            <div class="containerSlider">
+                                <div class="imgLabel">
+                                    <img src="../img/img-alojamiento-2.png" alt="Paris">
+                                    <div class="labelPagar">Pagar en Hotel</div>
+                                </div>
+                                <div class="contentSlider--aloja">
+                                    <div class="contentInfo">
+                                        <p class="dateAloja">26/05 - 30/05</p>
+                                        <h4 class="titleAloja"><strong>13 rue de la Lune, 2nd arr.</strong><br>
+                                            Paris, 75002, Francia</h4>
+                                        <p class="descriptionCard--aloja">4 Noches, 1 Habitación, 1 Adulto.</p>
+                                        <p class="descriptionCard--aloja">1 Habitación single con baño compartido.</p>
+                                        <p class="descriptionCard--aloja">Check In/Out: 14:00 hs. / 11:00 hs.</p>
+                                        <p class="descriptionCard--aloja">10% IVA incluido. 
+                                            €3.23 de impuesto por noche incluida.</p>
+                                        <p class="descriptionCard--aloja">Precio total: €240,92</p>
+                                        <p class="descriptionCard--aloja">El precio de esta habitación no incluye servicio de comidas.</p>
+                                    </div>
+                                    <div class="contentGrid--aloja">
+                                        <p class="filtrosLink">Ver reserva</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendario">
+                    <div class="contentCalendar">
+                        <h4 class="titleCalendar">Resumen Alojamientos</h4>
+                        <div class="dateCalendar">
+                            <div class="ContentCard--Calendar">
+                                <div class="ContainerCard">
+                                    <div class="contentAloja">
+                                        <div class="alojaCard">
+                                            <table class="calendarNumber--days">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>L</td>
+                                                        <td>M</td>
+                                                        <td>M</td>
+                                                        <td>J</td>
+                                                        <td>V</td>
+                                                        <td>S</td>
+                                                        <td>D</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>    
+                                            <div class="nameMonthCalendar">
+                                                <h5 class="nameMonth">May</h5>
+                                            </div>
+                                            <table class="calendarNumber">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td>&nbsp;</td>
+                                                        <td>1</td>
+                                                        <td>2</td>
+                                                        <td>3</td>
+                                                        <td>4</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>7</td>
+                                                        <td>8</td>
+                                                        <td>9</td>
+                                                        <td>10</td>
+                                                        <td>11</td>
+                                                        <td>12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>13</td>
+                                                        <td>14</td>
+                                                        <td class="bt-1">15</td>
+                                                        <td class="bt-1">16</td>
+                                                        <td class="bt-1">17</td>
+                                                        <td class="bt-1">18</td>
+                                                        <td class="bt-1">19</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bt-1">20</td>
+                                                        <td class="bt-1">21</td>
+                                                        <td class="bt-1">22</td>
+                                                        <td class="bt-1">23</td>
+                                                        <td class="bt-1">24</td>
+                                                        <td class="bt-1">25</td>
+                                                        <td class="bt-1">26</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bt-1">27</td>
+                                                        <td class="bt-1">28</td>
+                                                        <td class="bt-1">29</td>
+                                                        <td class="bt-1">30</td>
+                                                        <td class="bt-1">31</td>
+                                                        <td>&nbsp;</td>
+                                                        <td>&nbsp;</td>
+                                                    </tr>                                        
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="alojaCard"> 
+                                            <div class="nameMonthCalendar">
+                                                <h5 class="nameMonth">Jun</h5>
+                                            </div>
+                                            <table class="calendarNumber">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td>&nbsp;</td>
+                                                        <td>&nbsp;</td>
+                                                        <td>&nbsp;</td>
+                                                        <td>&nbsp;</td>
+                                                        <td class="bt-1">1</td>
+                                                        <td class="bt-1">2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bt-1">3</td>
+                                                        <td class="bt-1">4</td>
+                                                        <td>5</td>
+                                                        <td>6</td>
+                                                        <td>7</td>
+                                                        <td>8</td>
+                                                        <td>9</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10</td>
+                                                        <td>11</td>
+                                                        <td>12</td>
+                                                        <td>13</td>
+                                                        <td>14</td>
+                                                        <td>15</td>
+                                                        <td>16</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>17</td>
+                                                        <td>18</td>
+                                                        <td>19</td>
+                                                        <td>20</td>
+                                                        <td>21</td>
+                                                        <td>22</td>
+                                                        <td>23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>24</td>
+                                                        <td>25</td>
+                                                        <td>26</td>
+                                                        <td>27</td>
+                                                        <td>28</td>
+                                                        <td>29</td>
+                                                        <td>30</td>
+                                                    </tr>                                        
+                                                </tbody>
+                                            </table>                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentCard--Info">
+                                <div class="infoCalendar">                                        
+                                    <p><strong>En viaje:</strong> 21 días</p>
+                                    <p><strong>Con alojamiento:</strong> 21/21 días</p>
+                                    <p><strong>Primer destino:</strong>  Londres (12 días)</p>
+                                    <p><strong>Segundo destino:</strong> Paris (4 días)</p>
+                                    <p><strong>Tercer destino:</strong> Liverpool (4 días)</p>
+                                </div>
+                                <div class="infoInfo">
+                                    <p>Todos tus alojamientos se encuentran actualizados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="noMore"><strong>No hay más viajes programados</strong></div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="logoFooter"><strong>Travel</strong><em>Ease</em></p>
+            <p class="copyrightFooter">TRAVELEASE ® Todos los derechos reservados, 2024.</p>
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>    
+<script src="../js/script.js"></script>
+</body>
+</html>

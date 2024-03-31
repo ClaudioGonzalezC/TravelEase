@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelEase - Claudio González</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logoHeader">
+                <a href="./">
+                    <p class="logoHeader"><strong>Travel</strong><em>Ease</em></p>
+                </a>              
+            </div>
+            <div class="contentMenu">
+                <div class="menuConfig">
+                    <img class="navMenu" src="./img/navgps.svg" alt="NavGPS">
+                    <p class="nameMenu">Hola, <strong><em>Claudio Gonzalez</em></strong></p>
+                    <img class="navConfig" src="./img/config.svg" alt="Configuración">
+                    <img class="navAlert" src="./img/alert.svg" alt="Alertas">
+                    <img class="bwMode" src="./img/bwmode.png" alt="b/w mode">
+                </div>
+                <nav class="nav">
+                    <a class="menuHeader" href="./pages/alojamiento.html">Mis viajes</a>
+                    <a class="menuHeader" href="./pages/tickets.html">Tickets</a>
+                    <a class="menuHeader" href="./pages/itinerario.html">Itinerario</a>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <h2 class="questionMain">¿Dónde vamos?</h2>
+            <form role="search" method="get" action="/search">
+                <input class="question mb-100 w-40" type="search" name="search-text" />
+                <button>Buscar</button>
+            </form>
+            <section class="continuarItinerario">
+                <h3 class="titleContinuar">Continuar con itinerario</h3>
+                <div class="slick-slider">
+                    <div class="containerSlider">
+                        <img src="./img/img-londres-2.png" alt="Slide 1">
+                        <div class="contentSlider">
+                            <div class="infoGrid">
+                                <div class="infoSlider">
+                                    <h4 class="titleCard">Viaje Mayo - junio</h4>
+                                    <p class="descriptionCard">por Claudio</p>
+                                </div>
+                                <div class="percent">
+                                    <img class="imgPercent" src="./img/percent40.png" alt="percent">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerSlider">
+                        <img src="./img/img-villarrica-1.png" alt="Slide 2">
+                        <div class="contentSlider">
+                            <div class="infoGrid">
+                                <div class="infoSlider">
+                                    <h4 class="titleCard">Viaje Marzo</h4>
+                                    <p class="descriptionCard">por Claudio</p>
+                                </div>
+                                <div class="percent">
+                                    <img class="imgPercent" src="./img/percent60.png" alt="percent">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sitiosRecomendados">
+                <h3 class="titleContinuar">Sitios recomendados</h3>
+                <div class="slick-slider">
+                    <div class="containerSlider">
+                        <img src="./img/img-paris-1.png" alt="Slide 1">
+                        <div class="contentSlider">
+                            <div class="contentInfo">
+                                <h4 class="titleCard">Vuelo a Paris</h4>
+                                <p class="descriptionCard">Según tus búsquedas en Google</p>
+                            </div>
+                            <div class="contentGrid">
+                                <p class="infoContent">Vuelo de ida</p>
+                                <p class="prizeContent">$450.000 CLP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerSlider">
+                        <img src="./img/img-londres-1.png" alt="Slide 2">
+                        <div class="contentSlider">
+                            <div class="contentInfo">
+                                <h4 class="titleCard">Estadía en Londres</h4>
+                                <p class="descriptionCard">Recomendado por Booking.com</p>
+                            </div>
+                            <div class="contentGrid">
+                                <p class="infoContent">Por 3 Noches</p>
+                                <p class="prizeContent">$75.000 CLP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerSlider">
+                        <img src="./img/img-copenhague-2.png" alt="Slide 3">
+                        <div class="contentSlider">
+                            <div class="contentInfo">
+                                <h4 class="titleCard">Estadía en Copenhague</h4>
+                                <p class="descriptionCard">Recomendado por Booking.com</p>
+                            </div>
+                            <div class="contentGrid">
+                                <p class="infoContent">Por 5 Noches</p>
+                                <p class="prizeContent">$85.000 CLP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerSlider">
+                        <img src="./img/img-dublin-1.png" alt="Slide 4">
+                        <div class="contentSlider">
+                            <div class="contentInfo">
+                                <h4 class="titleCard">Vuelo a Dublín</h4>
+                                <p class="descriptionCard">Según tus búsquedas en Google</p>
+                            </div>
+                            <div class="contentGrid">
+                                <p class="infoContent">Vuelo de ida</p>
+                                <p class="prizeContent">$350.000 CLP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerSlider">
+                        <img src="./img/img-liverpool-1.png" alt="Slide 5">
+                        <div class="contentSlider">
+                            <div class="contentInfo">
+                                <h4 class="titleCard">Estadía en Liverpool</h4>
+                                <p class="descriptionCard">Recomendado por Trivago.com</p>
+                            </div>
+                            <div class="contentGrid">
+                                <p class="infoContent">Por 3 Noches</p>
+                                <p class="prizeContent">$120.000 CLP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="viajesAnteriores">
+                <h3 class="titleContinuar">Viajes anteriores</h3>
+                <div class="slick-slider">
+                    <div class="containerSlider">
+                        <img src="./img/img-iquique-1.png" alt="Slide 1">
+                        <div class="contentSlider">
+                            <div class="infoGrid">
+                                <div class="infoSlider">
+                                    <h4 class="titleCard">Iquique, CL</h4>
+                                    <p class="descriptionCard">Feb, 2018</p>
+                                </div>
+                                <div class="percent">
+                                    <img class="imgPercent" src="./img/percent100.png" alt="percent">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerSlider">
+                        <img src="./img/img-copenhague-1.png" alt="Slide 2">
+                        <div class="contentSlider">
+                            <div class="infoGrid">
+                                <div class="infoSlider">
+                                    <h4 class="titleCard">Copenhague, DK</h4>
+                                    <p class="descriptionCard">Oct, 2021</p>
+                                </div>
+                                <div class="percent">
+                                    <img class="imgPercent" src="./img/percent100.png" alt="percent">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerSlider">
+                        <img src="./img/img-valdivia-1.png" alt="Slide 3">
+                        <div class="contentSlider">
+                            <div class="infoGrid">
+                                <div class="infoSlider">
+                                    <h4 class="titleCard">Valdivia, CL</h4>
+                                    <p class="descriptionCard">Dic, 2017</p>
+                                </div>
+                                <div class="percent">
+                                    <img class="imgPercent" src="./img/percent100.png" alt="percent">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerSlider">
+                        <img src="./img/img-dublin-2.png" alt="Slide 4">
+                        <div class="contentSlider">
+                            <div class="infoGrid">
+                                <div class="infoSlider">
+                                    <h4 class="titleCard">Dublín, IR</h4>
+                                    <p class="descriptionCard">Ene, 2021</p>
+                                </div>
+                                <div class="percent">
+                                    <img class="imgPercent" src="./img/percent100.png" alt="percent">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="logoFooter"><strong>Travel</strong><em>Ease</em></p>
+            <p class="copyrightFooter">TRAVELEASE ® Todos los derechos reservados, 2024.</p>
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>    
+<script src="/js/script.js"></script>
+</body>
+</html>

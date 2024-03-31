@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelEase - Claudio González</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logoHeader">
+                <a href="../index.html">
+                    <p class="logoHeader"><strong>Travel</strong><em>Ease</em></p>
+                </a>              
+            </div>
+            <div class="contentMenu">
+                <div class="menuConfig mobile">
+                    <img class="navMenu" src="../img/navgps.svg" alt="NavGPS">
+                    <p class="nameMenu">Hola, <strong><em>Claudio Gonzalez</em></strong></p>
+                    <img class="navConfig" src="../img/config.svg" alt="Configuración">
+                    <img class="navAlert" src="../img/alert.svg" alt="Alertas">
+                    <img class="bwMode" src="../img/bwmode.png" alt="b/w mode">
+                </div>
+                <nav class="nav">
+                    <a class="menuHeader active" href="../pages/alojamiento.html">Mis viajes</a>
+                    <a class="menuHeader" href="../pages/tickets.html">Tickets</a>
+                    <a class="menuHeader" href="../pages/itinerario.html">Itinerario</a>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="filtros">
+                <div class="yearFiltros">
+                    <a class="filtrosButton min-w115" href="#">Anteriores</a> 
+                    <a class="filtrosButton" href="#">2023</a> 
+                    <a class="buttonActive" href="#">2024</a> 
+                    <a class="filtrosButton" href="#">2025</a> 
+                    <a class="filtrosLink mt-15" href="#">Nuevo viaje</a> 
+                </div>
+                <div class="proyectoName">
+                    <p class="fs-16">Preparando viaje: <strong>Viaje Mayo - junio</strong></p>
+                    <div>
+                        <a class="filtrosLink" href="#">Editar</a> 
+                        <a class="filtrosLinkDelete ml-20" href="#">Eliminar</a> 
+                    </div>
+                </div>
+                <div class="menuFiltros">
+                    <a class="menuHeader min-w115" href="../pages/alojamiento.html">Alojamiento</a>
+                    <a class="menuHeader min-w115">Transporte</a>
+                    <a class="menuHeader min-w115">Restaurants</a>
+                    <a class="menuHeader min-w115 active">Mi equipaje</a>
+                    <a class="menuHeader min-w115">Presupuesto</a>
+                    <a class="menuHeader min-w115">Reloj mundial</a>
+                </div>
+                <div class="equipajesFiltros">
+                    <p class="textFiltros">Equipajes:</p>
+                    <a class="filtrosButton" href="#">Bolso</a> 
+                    <a class="filtrosButton" href="#">Mano</a> 
+                    <a class="filtrosButton" href="#">Bodega</a> 
+                    <a class="filtrosLink mt-15" href="#">Agregar +</a> 
+                </div>
+            </section>
+            <section class="addEquipaje">
+                <div class="Equipaje">
+                    <p class="titleEquipaje">Agrega tu equipaje a <strong>Bolso</strong>:</p>
+                    <form role="search" method="get" action="/search">
+                        <input class="question w-70 m-equipaje" type="search" name="search-text" />
+                        <button>Agregar</button>
+                    </form>
+                    <div class="containerEquipaje">
+                        <div class="contentEquipaje">
+                            <p>Pasaporte</p>
+                            <p>Carpeta con documentos</p>
+                            <p>Adaptador Europeo</p>
+                            <p>Batería portátil </p>
+                            <p>Tarjetas de Débito y Crédito</p>
+                            <p>Lente 18 - 135</p>
+                        </div>
+                        <div class="contentEquipaje">
+                            <p>Cepillo de dientes</p>
+                            <p>Pasta de dientes</p>
+                            <p>Cargador Celular</p>
+                            <p>Mascarilla Sanitaria / Barbijo</p>
+                            <p>2 Baterías Cámara</p>
+                            <p>Lente 70 - 200</p>
+                        </div>
+                    </div>
+                    <div class="tagEquipaje">
+                        <p>Quizás quieras agregar: <a class="filtrosLink" href="#">Cámara</a>, <a class="filtrosLink" href="#">Cable cargador batería externa</a>, <a class="filtrosLink" href="#">bloqueador solar</a>.</p>
+                    </div>
+                </div>
+                <div class="Equipaje">
+                    <p class="titleEquipaje">Agrega tu equipaje a <strong>Mano</strong>:</p>
+                    <form role="search" method="get" action="/search">
+                        <input class="question w-70 m-equipaje" type="search" name="search-text" />
+                        <button>Agregar</button>
+                    </form>
+                    <div class="containerEquipaje">
+                        <div class="contentEquipaje">
+                            <p><strong>6x</strong> Par de Calcetines</p>
+                            <p><strong>2x</strong> Pantalones</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div class="contentEquipaje">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="tagEquipaje">
+                        <p>Quizás quieras agregar: <a class="filtrosLink" href="#">Gorro de lana</a>, <a class="filtrosLink" href="#">Toalla</a>, <a class="filtrosLink" href="#">Impermeable</a>, <a class="filtrosLink" href="#">Desodorante</a>.</p>                    </div>
+                </div>
+                <div class="Equipaje">
+                    <p class="titleEquipaje">Agrega tu equipaje a <strong>Bodega</strong>:</p>
+                    <form role="search" method="get" action="/search">
+                        <input class="question w-70 m-equipaje" type="search" name="search-text" />
+                        <button>Agregar</button>
+                    </form>
+                    <div class="containerEquipaje">
+                        <div class="contentEquipaje">
+                            <p><strong>1x</strong> Par de Zapatillas de Trekking</p>
+                            <p><strong>2x</strong> Candados pequeños</p>
+                            <p><strong>2x</strong> Afeitadoras</p>
+                            <p><strong>4x</strong> Poleras / Remeras</p>
+                            <p><strong>1x</strong> Termo</p>
+                            <p></p>
+                        </div>
+                        <div class="contentEquipaje">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="tagEquipaje">
+                        <p>Quizás quieras agregar: <a class="filtrosLink" href="#">Perfume</a>, <a class="filtrosLink" href="#">Hilo</a>, <a class="filtrosLink" href="#">Aguja</a>, <a class="filtrosLink" href="#">Bloqueador solar</a>.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="logoFooter"><strong>Travel</strong><em>Ease</em></p>
+            <p class="copyrightFooter">TRAVELEASE ® Todos los derechos reservados, 2024.</p>
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>    
+<script src="../js/script.js"></script>
+</body>
+</html>
