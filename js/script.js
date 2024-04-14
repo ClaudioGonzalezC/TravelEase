@@ -15,10 +15,18 @@ $('.slick-slider').slick({
             }
         },
         {
-            breakpoint: 768, // Mobile
+            breakpoint: 769, // Mobile
             settings: {
                 centerPadding: '20px',
                 slidesToShow: 2, // Muestra 2 slides en mobile
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 496, // Mobile
+            settings: {
+                centerPadding: '20px',
+                slidesToShow: 1, // Muestra 2 slides en mobile
                 slidesToScroll: 1
             }
         }

@@ -102,6 +102,11 @@ p {
         width:70%
     }
 }
+@media (max-width:394px) {
+    .w-50 {
+        width:60%
+    }
+}
 .w-70 {
     width:70%;
 }
@@ -301,6 +306,19 @@ button {
     padding: 20px 10px 0px;
     margin: 0px;
 }
+.titleCard-home {
+    padding: 20px 10px 0px;
+    margin: 0px;
+    color:var(--gris);
+}
+.titleItinerario {
+    padding: 20px 20px 0px;
+    margin: 0px;
+    color:var(--gris);
+}
+.titleItinerario strong {
+    font-weight: bold;
+}
 .descriptionCard {
     margin: 5px 10px;
     font-size: 12px;
@@ -459,6 +477,12 @@ footer {
     column-gap: 100px;
     margin:50px 0px;
 }
+@media (max-width:1365px) {
+    .AlojamientoBlocks {
+        display:block;
+        margin:50px 0px;
+    }
+}
 .contentCalendar {
     border:1px solid var(--gris);
     padding: 30px 40px;
@@ -467,11 +491,31 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+@media (max-width:630px) {
+    .dateCalendar {
+        display:block;
+    }
+}
 .ContentCard--Aloja {
     display:grid;
     grid-template-columns: repeat(2,1fr);
     column-gap:40px;
     margin-top:40px;
+}
+@media (max-width:1365px) and (min-width:1304px) {
+    .ContentCard--Aloja {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media (max-width:640px) {
+    .ContentCard--Aloja {
+        display:block;
+    }
+}
+@media (max-width:1365px) {
+    .infoAloja p {
+        max-width: 610px;
+    }
 }
 .calendarNumber tr {
     text-align: end;
