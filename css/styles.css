@@ -43,6 +43,10 @@ a {
 p {
     font-size:14px;
 }
+main h1.home {
+    font-size: 21px;
+    text-align: center;
+}
 .container {
     max-width:1366px;
     margin:0 auto;
@@ -75,13 +79,8 @@ p {
 .mb-100 {
     margin-bottom:100px;
 }
-.mb-100-home {
-    margin-bottom:100px;
-}
-@media (max-width:768px) {
-    .mb-100-home {
-        margin-bottom:50px;
-    }
+.mb-50 {
+    margin-bottom:50px;
 }
 .m-equipaje {
     margin:10px 0px 30px;
@@ -148,6 +147,9 @@ p {
         min-width: 115px;
     }
 }
+.text-Center {
+    text-align: center;
+} 
 
 /* Header */
 header {
