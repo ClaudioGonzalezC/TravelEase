@@ -34,14 +34,11 @@ main h1.home {
 .container {
     max-width: 1366px;
     margin: 0 auto;
-}
-@media (max-width: 1440px) and (min-width: 769px) {
-    .container {
+
+    @media (max-width: 1440px) and (min-width: 769px) {
         margin: 0 40px;
     }
-}
-@media (max-width: 768px) {
-    .container {
+    @media (max-width: 768px) {
         margin: 0 20px;
     }
 }
@@ -71,35 +68,28 @@ main h1.home {
 }
 .w-40 {
     width: 40%;
-}
-@media (max-width: 768px) {
-    .w-40 {
+
+    @media (max-width: 768px) {
         width: 80%;
     }
 }
 .w-50 {
     width: 40%;
-}
-@media (max-width: 768px) {
-    .w-50 {
+
+    @media (max-width: 768px) {
         width: 70%;
     }
-}
-@media (max-width: 394px) {
-    .w-50 {
+    @media (max-width: 394px) {
         width: 60%;
     }
 }
 .w-70 {
     width: 70%;
-}
-@media (max-width: 865px) and (min-width: 769px) {
-    .w-70 {
+
+    @media (max-width: 865px) and (min-width: 769px) {
         width: 65%;
     }
-}
-@media (max-width: 422px) {
-    .w-70 {
+    @media (max-width: 422px) {
         width: 55%;
     }
 }
@@ -108,14 +98,11 @@ main h1.home {
 }
 .fs-16 {
     font-size: 16px;
-}
-@media (max-width: 768px) and (min-width: 316px) {
-    .fs-16 {
+
+    @media (max-width: 768px) and (min-width: 316px) {
         line-height: 0.1;
     }
-}
-@media (max-width: 315px) {
-    .fs-16 {
+    @media (max-width: 315px) {
         line-height: 1.1;
     }
 }

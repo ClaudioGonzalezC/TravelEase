@@ -4,17 +4,14 @@
     grid-template-columns: repeat(3, 1fr);
     -moz-column-gap: 20px;
     column-gap: 20px;
-}
-@media (max-width: 1240px) and (min-width: 768px) {
-    .addEquipaje {
+
+    @media (max-width: 1240px) and (min-width: 768px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         -moz-column-gap: 20px;
         column-gap: 20px;
     }
-}
-@media (max-width: 768px) {
-    .addEquipaje {
+    @media (max-width: 768px) {
         display: block;
     }
 }
@@ -25,15 +22,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     min-height: 260px;
-}
-@media (max-width: 560px) {
-    .containerEquipaje {
+
+    @media (max-width: 560px) {
         padding: 20px;
         gap: 20px;
     }
-}
-@media (max-width: 425px) {
-    .containerEquipaje {
+    @media (max-width: 425px) {
         display: block;
     }
 }

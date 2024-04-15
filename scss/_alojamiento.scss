@@ -5,9 +5,8 @@
     -moz-column-gap: 100px;
     column-gap: 100px;
     margin: 50px 0px;
-}
-@media (max-width: 1365px) {
-    .AlojamientoBlocks {
+
+    @media (max-width: 1365px) {
         display: block;
         margin: 50px 0px;
     }
@@ -19,9 +18,8 @@
 .dateCalendar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
-@media (max-width: 630px) {
-    .dateCalendar {
+
+    @media (max-width: 630px) {
         display: block;
     }
 }
@@ -31,14 +29,11 @@
     -moz-column-gap: 40px;
     column-gap: 40px;
     margin-top: 40px;
-}
-@media (max-width: 1365px) and (min-width: 1304px) {
-    .ContentCard--Aloja {
+
+    @media (max-width: 1365px) and (min-width: 1304px) {
         grid-template-columns: repeat(4, 1fr);
     }
-}
-@media (max-width: 640px) {
-    .ContentCard--Aloja {
+    @media (max-width: 640px) {
         display: block;
     }
 }
