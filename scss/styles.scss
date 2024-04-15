@@ -12,6 +12,8 @@ $amarillo: #FDCE31;
 $violeta: #9B00A2;
 $none: none;
 
+@import "_normalize";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import "_variables";
 @import "_header";
 @import "_home";
