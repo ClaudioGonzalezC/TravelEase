@@ -67,13 +67,11 @@ $breakpoint-xd: 1440px;
             @content; 
         }
     }
-
     @else if $media == xxt {
         @media (max-width: $breakpoint-xxst) { 
             @content; 
         }
     }
-
     @else if $media == st {
         @media (min-width: $breakpoint-st) and (max-width: $breakpoint-xd) { 
             @content;
