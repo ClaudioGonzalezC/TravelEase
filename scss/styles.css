@@ -419,7 +419,7 @@ main h1.home {
 .fs-16 {
   font-size: 16px;
 }
-@media (max-width: 768px) and (min-width: 316px) {
+@media (min-width: 316px) and (max-width: 768px) {
   .fs-16 {
     line-height: 0.1;
   }

@@ -99,10 +99,10 @@ main h1.home {
 .fs-16 {
     font-size: 16px;
 
-    @media (max-width: 768px) and (min-width: 316px) {
+    @include media(sm) {
         line-height: 0.1;
     }
-    @media (max-width: 315px) {
+    @include media(xm) {
         line-height: 1.1;
     }
 }
