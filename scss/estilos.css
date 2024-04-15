@@ -330,6 +330,11 @@ main h1.home {
   text-align: center;
 }
 
+h1.landings {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
 .container {
   max-width: 1366px;
   margin: 0 auto;
