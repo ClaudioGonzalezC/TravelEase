@@ -31,20 +31,23 @@
     @media (max-width: 1300px) and (min-width: 1000px) {
         grid-template-columns: repeat(15, 1fr);
     }
-    @media (max-width: 999px) and (min-width: 768px) {
+    @include media(xsm) {
         grid-template-columns: repeat(13, 1fr);
     }
-    @media (max-width: 767px) and (min-width: 550px) {
+    @include media(xxxm) {
         grid-template-columns: repeat(10, 1fr);
     }
-    @media (max-width: 549px) and (min-width: 490px) {
+    @include media(xxm) {
         grid-template-columns: repeat(8, 1fr);
     }
-    @media (max-width: 489px) and (min-width: 375px) {
+    @include media(xm) {
         grid-template-columns: repeat(6, 1fr);
     }
-    @media (max-width: 374px) {
+    @include media(mm) {
         grid-template-columns: repeat(4, 1fr);
+    }
+    @include media(xt) {
+        font-size: 13px;
     }
 }
 .daysCalendar span {
@@ -83,7 +86,7 @@
     color: $naranja;
     text-decoration: underline;
 
-    @media (max-width: 768px) {
+    @include media(xt) {
         font-size: 13px;
     }
 }
@@ -91,7 +94,7 @@
     color: $rojo;
     text-decoration: underline;
 
-    @media (max-width: 768px) {
+    @include media(xt) {
         font-size: 13px;
     }
 }

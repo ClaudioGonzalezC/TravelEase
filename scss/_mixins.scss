@@ -1,8 +1,19 @@
 $breakpoint-xm: 315px;
 $breakpoint-sm: 316px;
+$breakpoint-lm: 374px;
+$breakpoint-xlm: 375px;
+$breakpoint-xxlm: 489px;
+$breakpoint-xxxlm: 490px;
+$breakpoint-xst: 549px;
+$breakpoint-sst: 550px;
+$breakpoint-mt: 767px;
 $breakpoint-xt: 768px;
 $breakpoint-st: 769px;
+$breakpoint-xxst: 820px;
 $breakpoint-lt: 865px;
+$breakpoint-xlt: 999px;
+$breakpoint-xxlt: 1000px;
+$breakpoint-sd: 1300px;
 $breakpoint-xd: 1440px;
 
 @mixin media($media) {
@@ -16,6 +27,36 @@ $breakpoint-xd: 1440px;
             @content; 
         }
     }
+    @else if $media == mm {
+        @media (max-width: $breakpoint-lm) { 
+            @content;
+        }
+    }
+    @else if $media == xm {
+        @media (max-width: $breakpoint-xxlm) and (min-width: $breakpoint-xlm) { 
+            @content;
+        }
+    }
+    @else if $media == xxm {
+        @media (max-width: $breakpoint-xst) and (min-width: $breakpoint-xxxlm) { 
+            @content;
+        }
+    }
+    @else if $media == xxxm {
+        @media (min-width: $breakpoint-sst) and (max-width: $breakpoint-mt) { 
+            @content;
+        }
+    }
+    @else if $media == xsm {
+        @media (min-width: $breakpoint-st) and (max-width: $breakpoint-xlt) { 
+            @content;
+        }
+    }
+    @else if $media == xxd {
+        @media (min-width: $breakpoint-xxlt) and (max-width: $breakpoint-sd) { 
+            @content;
+        }
+    }    
     @else if $media == lm {
         @media (min-width: $breakpoint-st) and (max-width: $breakpoint-lt) { 
             @content;
@@ -26,6 +67,13 @@ $breakpoint-xd: 1440px;
             @content; 
         }
     }
+
+    @else if $media == xxt {
+        @media (max-width: $breakpoint-xxst) { 
+            @content; 
+        }
+    }
+
     @else if $media == st {
         @media (min-width: $breakpoint-st) and (max-width: $breakpoint-xd) { 
             @content;

@@ -11,7 +11,7 @@
         -moz-column-gap: 20px;
         column-gap: 20px;
     }
-    @media (max-width: 768px) {
+    @include media(xt) {
         display: block;
     }
 }
