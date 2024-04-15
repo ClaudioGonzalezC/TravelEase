@@ -714,13 +714,15 @@ main form {
 .formMain {
   text-align: center;
 }
-.formMain .question {
+
+.question {
   border-radius: 15px;
   border: 1px solid #707070;
   padding: 4px 10px;
   margin-right: 10px;
 }
-.formMain button {
+
+button {
   border-radius: 15px;
   background-color: #707070;
   color: #fff;
