@@ -1,0 +1,31 @@
+/* Mixins */
+@mixin DesktopCustom {
+    @media (max-width: 1440px) and (min-width: 769px) {
+        @content;
+    }
+}
+@mixin Desktop {
+    @media screen and (min-width: 769px) {
+        @content;
+    }
+}
+@mixin tabletCustom {
+    @media (max-width: 865px) and (min-width: 769px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin mobileCustom {
+    @media (max-width: 768px) and (min-width: 316px) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media screen and (max-width: 315px) {
+        @content;
+    }
+}
