@@ -12,20 +12,21 @@ main form {
 }
 .formMain {
     text-align: center;
-}
-.question {
-    border-radius: 15px;
-    border: 1px solid $gris;
-    padding: 4px 10px;
-    margin-right: 10px;
-}
-button {
-    border-radius: 15px;
-    background-color: $gris;
-    color: $blanco;
-    padding: 5px 20px;
-    font-family: $interFont;
-    border: 0px;
+
+    .question {
+        border-radius: 15px;
+        border: 1px solid $gris;
+        padding: 4px 10px;
+        margin-right: 10px;
+    }
+    button {
+        border-radius: 15px;
+        background-color: $gris;
+        color: $blanco;
+        padding: 5px 20px;
+        font-family: $interFont;
+        border: 0px;
+    }
 }
 .buttonActive {
     border-radius: 15px;

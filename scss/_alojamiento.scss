@@ -70,30 +70,31 @@
 .imgLabel {
     display: flex;
     position: relative;
-}
-.labelPagado {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: $amarillo;
-    padding: 5px 10px;
-    color: $gris;
-    max-width: 80px;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-}
-.labelPagar {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: $violeta;
-    padding: 5px 10px;
-    color: $blanco;
-    max-width: 100px;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 200;
+
+    .labelPagado {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $amarillo;
+        padding: 5px 10px;
+        color: $gris;
+        max-width: 80px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .labelPagar {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $violeta;
+        padding: 5px 10px;
+        color: $blanco;
+        max-width: 100px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 200;
+    }
 }
 .titleAloja {
     font-size: 14px;

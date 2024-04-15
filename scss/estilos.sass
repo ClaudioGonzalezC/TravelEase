@@ -233,6 +233,13 @@ header
         display: grid
         grid-template-columns: repeat(1, 1fr)
     
+    .logoHeader 
+        font-size: 30px
+        color: $gris
+        margin: 15px 0px
+
+        @include media(xxt) 
+        margin: 5px 0px
 
 .menuConfig 
     display: flex
@@ -264,16 +271,7 @@ header
 .bwMode 
     max-width: 35px
     height: auto
-    width: 100%
-
-.logoHeader 
-    font-size: 30px
-    color: $gris
-    margin: 15px 0px
-
-    @include media(xxt) 
-        margin: 5px 0px
-    
+    width: 100%    
 
 .menuHeader 
     color: $gris
@@ -449,19 +447,19 @@ main form
 .formMain 
     text-align: center
 
-.question 
-    border-radius: 15px
-    border: 1px solid $gris
-    padding: 4px 10px
-    margin-right: 10px
+    .question 
+        border-radius: 15px
+        border: 1px solid $gris
+        padding: 4px 10px
+        margin-right: 10px
 
-button 
-    border-radius: 15px
-    background-color: $gris
-    color: $blanco
-    padding: 5px 20px
-    font-family: $interFont
-    border: 0px
+    button 
+        border-radius: 15px
+        background-color: $gris
+        color: $blanco
+        padding: 5px 20px
+        font-family: $interFont
+        border: 0px
 
 .buttonActive 
     border-radius: 15px
@@ -543,10 +541,10 @@ button
     font-size: 15px
     text-align: center
 
-.daysActive 
-    border: 1px solid $gris
-    border-radius: 5px
-    padding: 15px 10px
+    .daysActive 
+        border: 1px solid $gris
+        border-radius: 5px
+        padding: 15px 10px
 
 .contentSlide--tickets:nth-child(1) 
     background-color: $grisSClaro
@@ -668,24 +666,24 @@ button
     font-size: 12px
     font-weight: 400
 
-.labelPagar 
-    position: absolute
-    bottom: 0
-    right: 0
-    background-color: $violeta
-    padding: 5px 10px
-    color: $blanco
-    max-width: 100px
-    text-align: center
-    font-size: 12px
-    font-weight: 200
+    .labelPagar 
+        position: absolute
+        bottom: 0
+        right: 0
+        background-color: $violeta
+        padding: 5px 10px
+        color: $blanco
+        max-width: 100px
+        text-align: center
+        font-size: 12px
+        font-weight: 200
 
-.titleAloja 
-    font-size: 14px
-    font-weight: 400
-    padding: 20px 20px 10px
-    margin: 0px
-    color: $gris
+    .titleAloja 
+        font-size: 14px
+        font-weight: 400
+        padding: 20px 20px 10px
+        margin: 0px
+        color: $gris
 
 .containerInfo 
     display: flex

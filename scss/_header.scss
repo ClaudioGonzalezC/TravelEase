@@ -8,6 +8,16 @@ header {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .logoHeader {
+        font-size: 30px;
+        color: $gris;
+        margin: 15px 0px;
+    
+        @include media(xxt) {
+            margin: 5px 0px;
+        }
+    }
 }
 .menuConfig {
     display: flex;
@@ -40,15 +50,6 @@ header {
     max-width: 35px;
     height: auto;
     width: 100%;
-}
-.logoHeader {
-    font-size: 30px;
-    color: $gris;
-    margin: 15px 0px;
-
-    @include media(xxt) {
-        margin: 5px 0px;
-    }
 }
 .menuHeader {
     color: $gris;
