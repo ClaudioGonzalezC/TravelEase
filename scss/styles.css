@@ -1,39 +1,24 @@
 @charset "UTF-8";
-:root {
-  --blanco:#fff;
-  --negro:#000;
-  --gris:#707070;
-  --grisM:#4A4A4A;
-  --grisSClaro:#E8E8E8;
-  --grisMClaro:#BEBEBE;
-  --grisClaro:#959595;
-  --interFont: "Inter", sans-serif;
-  --naranja:#E8A100;
-  --rojo:#FF6C6C;
-  --amarillo:#FDCE31;
-  --violeta:#9B00A2;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
 
 body {
-  font-family: var(--interFont);
+  font-family: "Inter", sans-serif;
 }
 
 /* Desktop tiene una versión con fondo blanco - simulando el switch blanco/negro */
 @media (min-width: 769px) {
   body {
-    background-color: var(--blanco);
-    color: var(--gris);
+    background-color: #fff;
+    color: #707070;
   }
 }
 /* Mobile tiene una versión con fondo negro - simulando el switch blanco/negro */
 @media (max-width: 768px) {
   body {
-    background-color: var(--negro);
-    color: var(--blanco);
+    background-color: #000;
+    color: #fff;
   }
 }
 img {
@@ -154,7 +139,7 @@ main h1.home {
   }
 }
 .bt-1 {
-  border-top: 1px solid var(--gris);
+  border-top: 1px solid #707070;
 }
 
 .flexCenter {
@@ -195,7 +180,7 @@ header {
   display: flex;
   justify-content: end;
   gap: 20px;
-  color: var(--gris);
+  color: #707070;
   margin: 20px 0px 0px;
 }
 
@@ -224,7 +209,7 @@ header {
 
 .logoHeader {
   font-size: 30px;
-  color: var(--gris);
+  color: #707070;
   margin: 15px 0px;
 }
 
@@ -234,7 +219,7 @@ header {
   }
 }
 .menuHeader {
-  color: var(--gris);
+  color: #707070;
   font-size: 18px;
   font-weight: 300;
 }
@@ -247,48 +232,69 @@ header {
   font-size: 15px;
 }
 
-/* Busqueda */
-.questionMain {
-  text-align: center;
-  margin-top: 70px;
+/* Home */
+.titleContinuar {
+  margin-left: 10px;
 }
 
-main form {
-  text-align: center;
+.infoGrid {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  border-radius: 0px 0px 15px 15px;
+  padding: 10px 10px 30px;
+  align-items: center;
 }
 
-@media (max-width: 768px) {
-  main form {
-    text-align: left;
-  }
-}
-.formMain {
-  text-align: center;
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5px 10px 15px;
+  align-items: end;
 }
 
-.question {
-  border-radius: 15px;
-  border: 1px solid var(--gris);
-  padding: 4px 10px;
-  margin-right: 10px;
+.infoContent {
+  font-size: 14px;
+  color: #959595;
+  margin: 20px 0px;
 }
 
-button {
-  border-radius: 15px;
-  background-color: var(--gris);
-  color: var(--blanco);
-  padding: 5px 20px;
-  font-family: var(--interFont);
-  border: 0px;
+.prizeContent {
+  font-size: 16px;
+  font-weight: 600;
+  color: #707070;
+  margin: 20px 0px;
 }
 
-.buttonActive {
-  border-radius: 15px;
-  background-color: var(--gris);
-  color: var(--blanco);
-  padding: 5px 20px;
-  font-family: var(--interFont);
-  border: 0px;
+.titleCard {
+  padding: 20px 10px 0px;
+  margin: 0px;
+}
+
+.titleCard-home {
+  padding: 20px 10px 0px;
+  margin: 0px;
+  color: #707070;
+}
+
+.titleItinerario {
+  padding: 20px 20px 0px;
+  margin: 0px;
+  color: #707070;
+}
+
+.titleItinerario strong {
+  font-weight: bold;
+}
+
+.descriptionCard {
+  margin: 5px 10px;
+  font-size: 12px;
+  color: #959595;
+}
+
+.imgPercent {
+  max-width: 45px;
 }
 
 /* Slick Carrusel */
@@ -306,151 +312,23 @@ button {
 }
 
 .contentSlider {
-  background-color: var(--blanco);
+  background-color: #fff;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 15px 15px;
   margin-bottom: 45px;
 }
 
-.titleContinuar {
-  margin-left: 10px;
-}
-
-.infoGrid {
-  background-color: var(--blanco);
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  border-radius: 0px 0px 15px 15px;
-  padding: 10px 10px 30px;
-  align-items: center;
-}
-
-.contentGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 5px 10px 15px;
-  align-items: end;
-}
-
-.infoContent {
-  font-size: 14px;
-  color: var(--grisClaro);
-  margin: 20px 0px;
-}
-
-.prizeContent {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--gris);
-  margin: 20px 0px;
-}
-
-.titleCard {
-  padding: 20px 10px 0px;
-  margin: 0px;
-}
-
-.titleCard-home {
-  padding: 20px 10px 0px;
-  margin: 0px;
-  color: var(--gris);
-}
-
-.titleItinerario {
-  padding: 20px 20px 0px;
-  margin: 0px;
-  color: var(--gris);
-}
-
-.titleItinerario strong {
-  font-weight: bold;
-}
-
-.descriptionCard {
-  margin: 5px 10px;
-  font-size: 12px;
-  color: var(--grisClaro);
-}
-
-.imgPercent {
-  max-width: 45px;
-}
-
-footer {
-  border-top: 1px solid var(--gris);
-  margin-top: 80px;
-}
-
-.logoFooter {
-  font-size: 25px;
-  color: var(--gris);
-  margin: 15px 0px;
-  display: inline-block;
-}
-
-.copyrightFooter {
-  display: inline-block;
-  font-size: 12px;
-  margin-left: 20px;
-}
-
-/* Mi equipaje */
-.addEquipaje {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-}
-
-@media (max-width: 1240px) and (min-width: 768px) {
-  .addEquipaje {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .addEquipaje {
-    display: block;
-  }
-}
-.containerEquipaje {
-  border: 1px solid var(--gris);
-  border-radius: 15px;
-  padding: 20px 40px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  min-height: 260px;
-}
-
-@media (max-width: 560px) {
-  .containerEquipaje {
-    padding: 20px;
-    gap: 20px;
-  }
-}
-@media (max-width: 425px) {
-  .containerEquipaje {
-    display: block;
-  }
-}
-@media (max-width: 768px) {
-  .tagEquipaje {
-    margin-bottom: 40px;
-  }
-}
 /* Filtros botones */
 .filtrosButton {
   border-radius: 15px;
-  border: 1px solid var(--gris);
-  color: var(--gris);
+  border: 1px solid #707070;
+  color: #707070;
   padding: 5px 10px;
 }
 
 .filtrosButton:hover, .filtrosButton:active {
-  background-color: var(--gris);
-  color: var(--blanco);
+  background-color: #707070;
+  color: #fff;
 }
 
 .yearFiltros {
@@ -458,7 +336,7 @@ footer {
   grid-template-columns: repeat(5, 1fr);
   max-width: 540px;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   text-align: center;
   margin-bottom: 40px;
   align-items: center;
@@ -480,7 +358,7 @@ footer {
 .proyectoName {
   display: flex;
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   max-width: 705px;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -499,7 +377,7 @@ footer {
 .menuFiltros {
   display: flex;
   -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
   margin-bottom: 30px;
 }
 
@@ -513,7 +391,7 @@ footer {
   grid-template-columns: repeat(5, 1fr);
   max-width: 430px;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   text-align: center;
   margin-bottom: 40px;
   align-items: center;
@@ -532,182 +410,62 @@ footer {
     row-gap: 5px;
   }
 }
-/* mis viajes */
-.AlojamientoBlocks {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 100px;
-       column-gap: 100px;
-  margin: 50px 0px;
+/* Busqueda */
+.questionMain {
+  text-align: center;
+  margin-top: 70px;
 }
 
-@media (max-width: 1365px) {
-  .AlojamientoBlocks {
-    display: block;
-    margin: 50px 0px;
+main form {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  main form {
+    text-align: left;
   }
 }
-.contentCalendar {
-  border: 1px solid var(--gris);
-  padding: 30px 40px;
+.formMain {
+  text-align: center;
 }
 
-.dateCalendar {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.question {
+  border-radius: 15px;
+  border: 1px solid #707070;
+  padding: 4px 10px;
+  margin-right: 10px;
 }
 
-@media (max-width: 630px) {
-  .dateCalendar {
-    display: block;
-  }
-}
-.ContentCard--Aloja {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-  margin-top: 40px;
-}
-
-@media (max-width: 1365px) and (min-width: 1304px) {
-  .ContentCard--Aloja {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (max-width: 640px) {
-  .ContentCard--Aloja {
-    display: block;
-  }
-}
-@media (max-width: 1365px) {
-  .infoAloja p {
-    max-width: 610px;
-  }
-}
-.calendarNumber tr {
-  text-align: end;
-}
-
-.calendarNumber td {
-  padding: 10px 5px;
-}
-
-.calendarNumber--days td {
-  padding: 9.7px;
-}
-
-.contentCard--Info {
-  display: grid;
-  align-content: space-between;
-}
-
-.filtrarPor {
-  display: flex;
-}
-
-#filtrar {
+button {
+  border-radius: 15px;
+  background-color: #707070;
+  color: #fff;
+  padding: 5px 20px;
+  font-family: "Inter", sans-serif;
   border: 0px;
-  color: var(--gris);
-  max-width: 60px;
-  border-bottom: 1px solid var(--gris);
 }
 
-.nameMonth {
-  margin: 10px;
+.buttonActive {
+  border-radius: 15px;
+  background-color: #707070;
+  color: #fff;
+  padding: 5px 20px;
+  font-family: "Inter", sans-serif;
+  border: 0px;
 }
 
-.imgLabel {
+/* Itinerario */
+.goItinerario {
   display: flex;
-  position: relative;
+  justify-content: end;
 }
 
-.labelPagado {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: var(--amarillo);
-  padding: 5px 10px;
-  color: var(--gris);
-  max-width: 80px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.labelPagar {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: var(--violeta);
-  padding: 5px 10px;
-  color: var(--blanco);
-  max-width: 100px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 200;
-}
-
-.titleAloja {
-  font-size: 14px;
-  font-weight: 400;
-  padding: 20px 20px 10px;
-  margin: 0px;
-  color: var(--gris);
-}
-
-.containerInfo {
-  display: flex;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  align-items: center;
-}
-
-.contentSlider--aloja {
-  background-color: var(--blanco);
+.contentSlider--ticket {
+  background-color: #fff;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 15px 15px;
   margin-bottom: 45px;
-  height: 350px;
-}
-
-.descriptionCard--aloja {
-  margin: 10px 20px;
-  font-size: 12px;
-  color: var(--grisClaro);
-}
-
-.dateAloja {
-  margin: 0px;
-  padding: 15px 20px 0px;
-  font-size: 12px;
-  color: var(--grisClaro);
-}
-
-.contentGrid--aloja {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 5px 20px 15px;
-  align-items: end;
-}
-
-.tooltip {
-  visibility: hidden;
-  width: 400px;
-  border: 1px solid var(--gris);
-  font-weight: 300;
-  border-radius: 15px;
-  color: var(--gris);
-  text-align: center;
-  padding: 5px 0;
-  margin-left: 130px;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-}
-
-.containerMaterialInfo:hover + .tooltip {
-  visibility: visible;
+  height: 375px;
 }
 
 /* Tickets */
@@ -715,7 +473,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   -moz-column-gap: 25px;
-       column-gap: 25px;
+  column-gap: 25px;
 }
 
 @media (max-width: 1420px) and (min-width: 1190px) {
@@ -790,54 +548,40 @@ footer {
 }
 
 .daysActive {
-  border: 1px solid var(--gris);
+  border: 1px solid #707070;
   border-radius: 5px;
   padding: 15px 10px;
 }
 
 .contentSlide--tickets:nth-child(1) {
-  background-color: var(--grisSClaro);
-  color: var(--grisM);
+  background-color: #E8E8E8;
+  color: #4A4A4A;
   border-radius: 15px;
   margin: 61px 0px 31px;
 }
 
 .contentSlide--tickets:nth-child(2) {
-  background-color: var(--grisMClaro);
-  color: var(--grisM);
+  background-color: #BEBEBE;
+  color: #4A4A4A;
   border-radius: 15px;
 }
 
 .contentSlider--transporte {
-  background-color: var(--blanco);
+  background-color: #fff;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 15px 15px;
   margin-bottom: 45px;
   height: 310px;
 }
 
-.goItinerario {
-  display: flex;
-  justify-content: end;
-}
-
-/* Itinerario */
-.contentSlider--ticket {
-  background-color: var(--blanco);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 0px 0px 15px 15px;
-  margin-bottom: 45px;
-  height: 375px;
-}
-
 /* Filtros links */
 .filtrosLink {
-  color: var(--naranja);
+  color: #E8A100;
   text-decoration: underline;
 }
 
 .filtrosLinkDelete {
-  color: var(--rojo);
+  color: #FF6C6C;
   text-decoration: underline;
 }
 
@@ -846,3 +590,244 @@ footer {
     font-size: 13px;
   }
 }
+/* mis viajes */
+.AlojamientoBlocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 100px;
+  column-gap: 100px;
+  margin: 50px 0px;
+}
+
+@media (max-width: 1365px) {
+  .AlojamientoBlocks {
+    display: block;
+    margin: 50px 0px;
+  }
+}
+.contentCalendar {
+  border: 1px solid #707070;
+  padding: 30px 40px;
+}
+
+.dateCalendar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 630px) {
+  .dateCalendar {
+    display: block;
+  }
+}
+.ContentCard--Aloja {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  margin-top: 40px;
+}
+
+@media (max-width: 1365px) and (min-width: 1304px) {
+  .ContentCard--Aloja {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .ContentCard--Aloja {
+    display: block;
+  }
+}
+@media (max-width: 1365px) {
+  .infoAloja p {
+    max-width: 610px;
+  }
+}
+.calendarNumber tr {
+  text-align: end;
+}
+
+.calendarNumber td {
+  padding: 10px 5px;
+}
+
+.calendarNumber--days td {
+  padding: 9.7px;
+}
+
+.contentCard--Info {
+  display: grid;
+  align-content: space-between;
+}
+
+.filtrarPor {
+  display: flex;
+}
+
+#filtrar {
+  border: 0px;
+  color: #707070;
+  max-width: 60px;
+  border-bottom: 1px solid #707070;
+}
+
+.nameMonth {
+  margin: 10px;
+}
+
+.imgLabel {
+  display: flex;
+  position: relative;
+}
+
+.labelPagado {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #FDCE31;
+  padding: 5px 10px;
+  color: #707070;
+  max-width: 80px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.labelPagar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #9B00A2;
+  padding: 5px 10px;
+  color: #fff;
+  max-width: 100px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.titleAloja {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 20px 20px 10px;
+  margin: 0px;
+  color: #707070;
+}
+
+.containerInfo {
+  display: flex;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.contentSlider--aloja {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 15px 15px;
+  margin-bottom: 45px;
+  height: 350px;
+}
+
+.descriptionCard--aloja {
+  margin: 10px 20px;
+  font-size: 12px;
+  color: #959595;
+}
+
+.dateAloja {
+  margin: 0px;
+  padding: 15px 20px 0px;
+  font-size: 12px;
+  color: #959595;
+}
+
+.contentGrid--aloja {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5px 20px 15px;
+  align-items: end;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 400px;
+  border: 1px solid #707070;
+  font-weight: 300;
+  border-radius: 15px;
+  color: #707070;
+  text-align: center;
+  padding: 5px 0;
+  margin-left: 130px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.containerMaterialInfo:hover + .tooltip {
+  visibility: visible;
+}
+
+/* Mi equipaje */
+.addEquipaje {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+
+@media (max-width: 1240px) and (min-width: 768px) {
+  .addEquipaje {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .addEquipaje {
+    display: block;
+  }
+}
+.containerEquipaje {
+  border: 1px solid #707070;
+  border-radius: 15px;
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 260px;
+}
+
+@media (max-width: 560px) {
+  .containerEquipaje {
+    padding: 20px;
+    gap: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .containerEquipaje {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .tagEquipaje {
+    margin-bottom: 40px;
+  }
+}
+footer {
+  border-top: 1px solid #707070;
+  margin-top: 80px;
+}
+
+.logoFooter {
+  font-size: 25px;
+  color: #707070;
+  margin: 15px 0px;
+  display: inline-block;
+}
+
+.copyrightFooter {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 20px;
+}/*# sourceMappingURL=styles.css.map */

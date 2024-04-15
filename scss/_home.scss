@@ -1,0 +1,54 @@
+/* Home */
+.titleContinuar {
+    margin-left: 10px;
+}
+.infoGrid {
+    background-color: $blanco;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border-radius: 0px 0px 15px 15px;
+    padding: 10px 10px 30px;
+    align-items: center;
+}
+.contentGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px 10px 15px;
+    align-items: end;
+}
+.infoContent {
+    font-size: 14px;
+    color: $grisClaro;
+    margin: 20px 0px;
+}
+.prizeContent {
+    font-size: 16px;
+    font-weight: 600;
+    color: $gris;
+    margin: 20px 0px;
+}
+.titleCard {
+    padding: 20px 10px 0px;
+    margin: 0px;
+}
+.titleCard-home {
+    padding: 20px 10px 0px;
+    margin: 0px;
+    color: $gris;
+}
+.titleItinerario {
+    padding: 20px 20px 0px;
+    margin: 0px;
+    color: $gris;
+}
+.titleItinerario strong {
+    font-weight: bold;
+}
+.descriptionCard {
+    margin: 5px 10px;
+    font-size: 12px;
+    color: $grisClaro;
+}
+.imgPercent {
+    max-width: 45px;
+}

@@ -1,0 +1,44 @@
+/* Mi equipaje */
+.addEquipaje {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+@media (max-width: 1240px) and (min-width: 768px) {
+    .addEquipaje {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .addEquipaje {
+        display: block;
+    }
+}
+.containerEquipaje {
+    border: 1px solid $gris;
+    border-radius: 15px;
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 260px;
+}
+@media (max-width: 560px) {
+    .containerEquipaje {
+        padding: 20px;
+        gap: 20px;
+    }
+}
+@media (max-width: 425px) {
+    .containerEquipaje {
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    .tagEquipaje {
+        margin-bottom: 40px;
+    }
+}

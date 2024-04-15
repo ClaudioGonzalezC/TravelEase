@@ -1,0 +1,156 @@
+/* mis viajes */
+.AlojamientoBlocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 100px;
+    column-gap: 100px;
+    margin: 50px 0px;
+}
+@media (max-width: 1365px) {
+    .AlojamientoBlocks {
+        display: block;
+        margin: 50px 0px;
+    }
+}
+.contentCalendar {
+    border: 1px solid $gris;
+    padding: 30px 40px;
+}
+.dateCalendar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 630px) {
+    .dateCalendar {
+        display: block;
+    }
+}
+.ContentCard--Aloja {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    margin-top: 40px;
+}
+@media (max-width: 1365px) and (min-width: 1304px) {
+    .ContentCard--Aloja {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 640px) {
+    .ContentCard--Aloja {
+        display: block;
+    }
+}
+@media (max-width: 1365px) {
+    .infoAloja p {
+        max-width: 610px;
+    }
+}
+.calendarNumber tr {
+    text-align: end;
+}
+.calendarNumber td {
+    padding: 10px 5px;
+}
+.calendarNumber--days td {
+    padding: 9.7px;
+}
+.contentCard--Info {
+    display: grid;
+    align-content: space-between;
+}
+.filtrarPor {
+    display: flex;
+}
+#filtrar {
+    border: 0px;
+    color: $gris;
+    max-width: 60px;
+    border-bottom: 1px solid $gris;
+}
+.nameMonth {
+    margin: 10px;
+}
+.imgLabel {
+    display: flex;
+    position: relative;
+}
+.labelPagado {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $amarillo;
+    padding: 5px 10px;
+    color: $gris;
+    max-width: 80px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+.labelPagar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $violeta;
+    padding: 5px 10px;
+    color: $blanco;
+    max-width: 100px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 200;
+}
+.titleAloja {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 20px 20px 10px;
+    margin: 0px;
+    color: $gris;
+}
+.containerInfo {
+    display: flex;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    align-items: center;
+}
+.contentSlider--aloja {
+    background-color: $blanco;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 15px 15px;
+    margin-bottom: 45px;
+    height: 350px;
+}
+.descriptionCard--aloja {
+    margin: 10px 20px;
+    font-size: 12px;
+    color: $grisClaro;
+}
+.dateAloja {
+    margin: 0px;
+    padding: 15px 20px 0px;
+    font-size: 12px;
+    color: $grisClaro;
+}
+.contentGrid--aloja {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px 20px 15px;
+    align-items: end;
+}
+.tooltip {
+    visibility: hidden;
+    width: 400px;
+    border: 1px solid $gris;
+    font-weight: 300;
+    border-radius: 15px;
+    color: $gris;
+    text-align: center;
+    padding: 5px 0;
+    margin-left: 130px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+.containerMaterialInfo:hover + .tooltip {
+    visibility: visible;
+}

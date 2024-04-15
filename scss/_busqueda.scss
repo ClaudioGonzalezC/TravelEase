@@ -1,0 +1,38 @@
+/* Busqueda */
+.questionMain {
+    text-align: center;
+    margin-top: 70px;
+}
+main form {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    main form {
+        text-align: left;
+    }
+}
+.formMain {
+    text-align: center;
+}
+.question {
+    border-radius: 15px;
+    border: 1px solid $gris;
+    padding: 4px 10px;
+    margin-right: 10px;
+}
+button {
+    border-radius: 15px;
+    background-color: $gris;
+    color: $blanco;
+    padding: 5px 20px;
+    font-family: $interFont;
+    border: 0px;
+}
+.buttonActive {
+    border-radius: 15px;
+    background-color: $gris;
+    color: $blanco;
+    padding: 5px 20px;
+    font-family: $interFont;
+    border: 0px;
+}

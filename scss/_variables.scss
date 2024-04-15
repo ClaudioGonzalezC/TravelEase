@@ -1,0 +1,136 @@
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    font-family: $interFont;
+}
+/* Desktop tiene una versión con fondo blanco - simulando el switch blanco/negro */
+@media (min-width: 769px) {
+    body {
+        background-color: $blanco;
+        color: $gris;
+    }
+}
+/* Mobile tiene una versión con fondo negro - simulando el switch blanco/negro */
+@media (max-width: 768px) {
+    body {
+        background-color: $negro;
+        color: $blanco;
+    }
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-size: 14px;
+}
+main h1.home {
+    font-size: 21px;
+    text-align: center;
+}
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+@media (max-width: 1440px) and (min-width: 769px) {
+    .container {
+        margin: 0 40px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        margin: 0 20px;
+    }
+}
+@media (max-width: 768px) {
+    .mt-15 {
+        margin-top: 8px;
+        text-align: left;
+    }
+}
+.ml-6 {
+    margin-left: 6px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-100 {
+    margin-bottom: 100px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.m-equipaje {
+    margin: 10px 0px 30px;
+}
+.w-40 {
+    width: 40%;
+}
+@media (max-width: 768px) {
+    .w-40 {
+        width: 80%;
+    }
+}
+.w-50 {
+    width: 40%;
+}
+@media (max-width: 768px) {
+    .w-50 {
+        width: 70%;
+    }
+}
+@media (max-width: 394px) {
+    .w-50 {
+        width: 60%;
+    }
+}
+.w-70 {
+    width: 70%;
+}
+@media (max-width: 865px) and (min-width: 769px) {
+    .w-70 {
+        width: 65%;
+    }
+}
+@media (max-width: 422px) {
+    .w-70 {
+        width: 55%;
+    }
+}
+.fs-12 {
+    font-size: 12px;
+}
+.fs-16 {
+    font-size: 16px;
+}
+@media (max-width: 768px) and (min-width: 316px) {
+    .fs-16 {
+        line-height: 0.1;
+    }
+}
+@media (max-width: 315px) {
+    .fs-16 {
+        line-height: 1.1;
+    }
+}
+.bt-1 {
+    border-top: 1px solid $gris;
+}
+.flexCenter {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 795px) {
+    .min-w115 {
+        min-width: 115px;
+    }
+}
+.text-Center {
+    text-align: center;
+}

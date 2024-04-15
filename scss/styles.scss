@@ -1,0 +1,25 @@
+$blanco: #fff;
+$negro: #000;
+$gris: #707070;
+$grisM: #4A4A4A;
+$grisSClaro: #E8E8E8;
+$grisMClaro: #BEBEBE;
+$grisClaro: #959595;
+$interFont: "Inter", sans-serif;
+$naranja: #E8A100;
+$rojo: #FF6C6C;
+$amarillo: #FDCE31;
+$violeta: #9B00A2;
+$none: none;
+
+@import "_variables";
+@import "_header";
+@import "_home";
+@import "_slickCarrusel";
+@import "_filtros";
+@import "_busqueda";
+@import "_itinerario";
+@import "_tickets";
+@import "_alojamiento";
+@import "_miequipaje";
+@import "_footer";

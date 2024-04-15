@@ -1,0 +1,85 @@
+/* Filtros botones */
+.filtrosButton {
+    border-radius: 15px;
+    border: 1px solid $gris;
+    color: $gris;
+    padding: 5px 10px;
+}
+.filtrosButton:hover, .filtrosButton:active {
+    background-color: $gris;
+    color: $blanco;
+}
+.yearFiltros {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 540px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    align-items: center;
+}
+@media (max-width: 590px) and (min-width: 401px) {
+    .yearFiltros {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 400px) {
+    .yearFiltros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+    }
+}
+.proyectoName {
+    display: flex;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    max-width: 705px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .proyectoName {
+        display: block;
+    }
+}
+.textFiltros, .titleEquipaje {
+    font-size: 16px;
+}
+.menuFiltros {
+    display: flex;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    margin-bottom: 30px;
+}
+@media (max-width: 795px) {
+    .menuFiltros {
+        overflow-x: scroll;
+    }
+}
+.equipajesFiltros {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 430px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    align-items: center;
+}
+@media (max-width: 560px) and (min-width: 471px) {
+    .equipajesFiltros {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 470px) {
+    .equipajesFiltros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5px;
+    }
+}
