@@ -4,6 +4,7 @@
     border: 1px solid $gris;
     color: $gris;
     padding: 5px 10px;
+    transition: .3s linear ease;
 }
 .filtrosButton:hover, .filtrosButton:active {
     background-color: $gris;
